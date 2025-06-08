@@ -76,6 +76,7 @@ export type SearchResult = DesktopItem & {
 export type ValidationResult = {
   isValid: boolean;
   error?: string;
+  warning?: string;
 };
 
 export type ValidationResults = Map<string, ValidationResult>;
