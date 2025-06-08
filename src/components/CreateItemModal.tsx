@@ -189,6 +189,9 @@ const CreateItemModal = React.memo<CreateItemModalProps>(({
               {!errors.url && urlValidation?.error && (
                 <p className="text-red-500 text-sm mt-1">{urlValidation.error}</p>
               )}
+              {!errors.url && !urlValidation?.error && urlValidation?.warning && (
+                <p className="text-amber-600 text-sm mt-1">{urlValidation.warning}</p>
+              )}
             </div>
           )}
 
